@@ -1,0 +1,79 @@
+2025-12-08 10:06:57,572 INFO    MainThread:3452 [wandb_setup.py:_flush():81] Current SDK version is 0.22.0
+2025-12-08 10:06:57,572 INFO    MainThread:3452 [wandb_setup.py:_flush():81] Configure stats pid to 3452
+2025-12-08 10:06:57,572 INFO    MainThread:3452 [wandb_setup.py:_flush():81] Loading settings from C:\Users\mbebe\.config\wandb\settings
+2025-12-08 10:06:57,572 INFO    MainThread:3452 [wandb_setup.py:_flush():81] Loading settings from C:\Users\mbebe\Desktop\znus_2_project\wandb\settings
+2025-12-08 10:06:57,572 INFO    MainThread:3452 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-12-08 10:06:57,572 INFO    MainThread:3452 [wandb_init.py:setup_run_log_directory():686] Logging user logs to C:\Users\mbebe\Desktop\znus_2_project\wandb\run-20251208_100657-983v4bkf\logs\debug.log
+2025-12-08 10:06:57,573 INFO    MainThread:3452 [wandb_init.py:setup_run_log_directory():687] Logging internal logs to C:\Users\mbebe\Desktop\znus_2_project\wandb\run-20251208_100657-983v4bkf\logs\debug-internal.log
+2025-12-08 10:06:57,573 INFO    MainThread:3452 [wandb_init.py:monkeypatch_ipython():605] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x000001916E776510>
+2025-12-08 10:06:57,573 INFO    MainThread:3452 [wandb_init.py:init():813] calling init triggers
+2025-12-08 10:06:57,573 INFO    MainThread:3452 [wandb_init.py:init():818] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'weight_decay': 0.0001, 'epochs': 5, 'patience': 10, 'dropout': 0.3, 'model': 'CustomResNet', '_wandb': {}}
+2025-12-08 10:06:57,573 INFO    MainThread:3452 [wandb_init.py:init():861] starting backend
+2025-12-08 10:06:59,914 INFO    MainThread:3452 [wandb_init.py:init():864] sending inform_init request
+2025-12-08 10:06:59,952 INFO    MainThread:3452 [wandb_init.py:init():872] backend started and connected
+2025-12-08 10:06:59,955 INFO    MainThread:3452 [wandb_run.py:_label_probe_notebook():1330] probe notebook
+2025-12-08 10:06:59,960 INFO    MainThread:3452 [wandb_run.py:_label_probe_notebook():1340] Unable to probe notebook: 'charmap' codec can't decode byte 0x8d in position 27107: character maps to <undefined>
+2025-12-08 10:06:59,961 INFO    MainThread:3452 [wandb_init.py:init():942] updated telemetry
+2025-12-08 10:07:00,005 INFO    MainThread:3452 [wandb_init.py:init():966] communicating run to backend with 90.0 second timeout
+2025-12-08 10:07:00,594 INFO    MainThread:3452 [wandb_init.py:init():1017] starting run threads in backend
+2025-12-08 10:07:00,920 INFO    MainThread:3452 [wandb_run.py:_console_start():2506] atexit reg
+2025-12-08 10:07:00,921 INFO    MainThread:3452 [wandb_run.py:_redirect():2354] redirect: wrap_raw
+2025-12-08 10:07:00,921 INFO    MainThread:3452 [wandb_run.py:_redirect():2423] Wrapping output streams.
+2025-12-08 10:07:00,921 INFO    MainThread:3452 [wandb_run.py:_redirect():2446] Redirects installed.
+2025-12-08 10:07:00,931 INFO    MainThread:3452 [wandb_init.py:init():1057] run started, returning control to user process
+2025-12-08 10:28:30,280 INFO    MainThread:3452 [wandb_init.py:_post_run_cell_hook():575] [no run ID] resuming backend
+2025-12-08 10:28:31,548 INFO    MainThread:3452 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-12-08 10:28:31,548 INFO    MainThread:3452 [wandb_init.py:_pre_run_cell_hook():564] [no run ID] pausing backend
+2025-12-08 10:28:31,572 INFO    MainThread:3452 [wandb_init.py:_post_run_cell_hook():575] [no run ID] resuming backend
+2025-12-08 10:28:31,648 INFO    MainThread:3452 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-12-08 10:28:31,648 INFO    MainThread:3452 [wandb_init.py:_pre_run_cell_hook():564] [no run ID] pausing backend
+2025-12-08 10:29:27,516 INFO    MainThread:3452 [wandb_init.py:_post_run_cell_hook():575] [no run ID] resuming backend
+2025-12-08 10:47:58,542 ERROR   wandb-AsyncioManager-main:3452 [service_client.py:_forward_responses():81] Error reading server response.
+Traceback (most recent call last):
+  File "C:\Users\mbebe\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 77, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbebe\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 91, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbebe\AppData\Local\Programs\Python\Python313\Lib\asyncio\streams.py", line 769, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\mbebe\AppData\Local\Programs\Python\Python313\Lib\asyncio\streams.py", line 539, in _wait_for_data
+    await self._waiter
+  File "C:\Users\mbebe\AppData\Local\Programs\Python\Python313\Lib\asyncio\selector_events.py", line 1005, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-12-08 10:47:58,615 INFO    wandb-AsyncioManager-main:3452 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.
+2025-12-08 10:47:58,624 ERROR   wandb-AsyncioManager-main:3452 [asyncio_manager.py:fn_wrap_exceptions():183] [no run ID] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\mbebe\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\mbebe\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "C:\Users\mbebe\AppData\Local\Programs\Python\Python313\Lib\asyncio\streams.py", line 374, in drain
+    raise exc
+  File "C:\Users\mbebe\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 77, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbebe\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 91, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbebe\AppData\Local\Programs\Python\Python313\Lib\asyncio\streams.py", line 769, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\mbebe\AppData\Local\Programs\Python\Python313\Lib\asyncio\streams.py", line 539, in _wait_for_data
+    await self._waiter
+  File "C:\Users\mbebe\AppData\Local\Programs\Python\Python313\Lib\asyncio\selector_events.py", line 1005, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-12-08 10:47:58,697 ERROR   wandb-AsyncioManager-main:3452 [asyncio_manager.py:fn_wrap_exceptions():183] [no run ID] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\mbebe\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\mbebe\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 73, in _close
+    await self._writer.wait_closed()
+  File "C:\Users\mbebe\AppData\Local\Programs\Python\Python313\Lib\asyncio\streams.py", line 358, in wait_closed
+    await self._protocol._get_close_waiter(self)
+  File "C:\Users\mbebe\AppData\Local\Programs\Python\Python313\Lib\asyncio\selector_events.py", line 1005, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host

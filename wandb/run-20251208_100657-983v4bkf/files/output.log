@@ -1,0 +1,14 @@
+Epoch 1/5 | Train Loss: 1.7294 | Train Acc: 0.4902 | Val Loss: 1.4402 | Val Acc: 0.4581
+Model saved! (New best validation loss)
+Epoch 2/5 | Train Loss: 1.2301 | Train Acc: 0.5652 | Val Loss: 1.3568 | Val Acc: 0.5278
+Model saved! (New best validation loss)
+Epoch 3/5 | Train Loss: 0.9603 | Train Acc: 0.6753 | Val Loss: 1.1565 | Val Acc: 0.6323
+Model saved! (New best validation loss)
+Epoch 4/5 | Train Loss: 0.8008 | Train Acc: 0.7595 | Val Loss: 0.8701 | Val Acc: 0.7030
+Model saved! (New best validation loss)
+Epoch 5/5 | Train Loss: 0.6521 | Train Acc: 0.8166 | Val Loss: 0.8312 | Val Acc: 0.7202
+Model saved! (New best validation loss)
+
+--- FINAL RESULTS ---
+Test Loss: 0.7937
+Test Accuracy: 0.7244
